@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+    --primary-color: #FABC3D;
+    --secondary-color: #001b5e;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* font-family: 'Rajdhani', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    background-color: #fff;
+    font-size: 62.5%;
+}
+
+.btn-custom {
+    background-color: var(--primary-color);
+    border-radius: 0;
+    color: #fff;
+    padding: .3rem 2rem;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn-custom:hover {
+    background-color: var(--secondary-color);
+    border-radius: 0;
+    color: #fff;
+    padding: .3rem 2rem;
+}
+
+.heading {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+header .navbar {
+    background-color: #fff !important;
+    padding: 1rem 1rem;
+}
+
+header .navbar ul li {
+    margin-right: 2rem;
+}
+
+
+header .navbar ul li a {
+    font-size: .9rem;
+}
+
+header .navbar ul li button {
+    font-size: .9rem;
+    background-color: var(--primary-color);
+    color: #fff
+}
+
+.hero {
+    background-image: url('../images/herobg.png');
+    background-repeat: no-repeat;
+    height: 100%;
+    padding-bottom: 7rem;
+
+}
+
+.hero .heroContent {
+    width: 45%;
+    padding-top: 12rem;
+
+}
+
+.hero .heroContent h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+
+
+}
+
+.hero .heroContent .heading {
+    color: var(--primary-color);
+}
+
+.hero .heroContent p {
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #2b2d3790;
+}
+
+.hero .heroBtn {
+    padding: .7rem 3rem;
+
+}
+
+/* about */
+
+.about {
+    margin-top: 5rem;
+    background-image: url('../images/aboutBg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.about .aboutImage img {
+    margin-top: 5rem;
+}
+
+.about .aboutContent {
+    margin-top: 5rem;
+}
+
+.about .aboutContent h3 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-top: 2rem;
+}
+
+.about .aboutContent p {
+    font-size: .8rem;
+    font-weight: 400;
+    color: #2b2d37ef;
+    margin-top: 1rem;
+}
+
+.about .aboutCard {
+    margin-top: 3rem;
+    display: flex;
+}
+
+.about .aboutCard .aboutCardImg img {
+    width: 50px;
+    margin-right: 2rem;
+}
+
+.about .aboutCard .aboutCardContent h5 {
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+
+}
+
+.about .aboutBtn {
+    padding: .7rem 3rem;
+
+}
+
+
+/* SERVICES */
+
+.services {
+    margin-top: 10rem;
+}
+
+.services h1 {
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: #001B5E;
+    margin: 4rem auto;
+}
+
+.services .serviceCard {
+    border: 1px solid #ededed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 3rem 1rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.services .serviceCard:hover {
+    box-shadow: 0px 10px 1rem rgba(121, 121, 121, 0.2);
+}
+
+.services .serviceCard img {
+    width: 50px;
+}
+
+.services .serviceCard h5 {
+    font-weight: 600;
+    color: #001B5E;
+    margin: 2rem auto;
+}
+
+.services .serviceCard p {
+    font-size: .9rem;
+    color: #707070;
+
+}
+
+.services .serviceCard a {
+    font-size: .9rem;
+    color: #292929;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.services .serviceCard a:hover {
+    color: var(--primary-color);
+}
+
+.services .serviceCard a:hover::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: var(--primary-color);
+    top: 50%;
+    left: 20%;
+    transform: translateY(.7rem);
+}
+
+.services .serviceCard a::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: #a1a1a1;
+    top: 50%;
+    left: 0%;
+    transform: translateY(.7rem);
+    transition: all 0.5s ease-in-out;
+
+}
+
+
+/* experience */
+
+.experience {
+    margin-top: 12rem;
+    background-image: url('../images/experienceBg.png');
+    height: 100%;
+    padding-bottom: 8rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.experience img {
+    margin-top: 4rem;
+    transform: translateX(3rem)
+}
+
+.experience .experienceContent {
+    margin-top: 8rem;
+}
+
+.experience .experienceContent h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.experience .experienceContent p {
+    font-size: .9rem;
+    margin: 3rem auto;
+    color: var(--secondary-color);
+}
+
+.experience .experienceYears {
+    display: flex;
+    align-items: center;
+}
+
+.experience .experienceYears .yearsCount {
+    color: var(--primary-color);
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+.experience .experienceYears .experienceLine {
+    width: 2px;
+    height: 3rem;
+    background-color: var(--secondary-color);
+    margin: 0 1rem;
+}
+
+.experience .experienceYears .year {
+    color: #83868C;
+}
+
+.experience .experienceYears h5 {
+    color: var(--secondary-color);
+
+}
+
+/* project */
+
+.project {
+    margin-top: 5rem;
+}
+
+.project h1 {
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: #001B5E;
+    margin: 4rem auto;
+}
+
+.project .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: var(--primary-color);
+    background-color: #fff;
+    border-color: transparent !important;
+    font-size: .9rem;
+}
+.project .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link {
+    color: var(--secondary-color);
+    background-color: #fff;
+    border-color: transparent !important;
+    font-size: .9rem;
+    margin-left: 2rem;
+}
+.project .nav-tabs {
+    border: none !important;
+}
+
+.project .projectImage{
+    position: relative;
+}
+
+
+
+.project .projectImage .projectImageContent{
+    background: #001b5e8b;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.project .projectImage .projectImageContent h5{
+    margin-top: 12rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+.project .projectImage .projectImageContent a{
+    margin-top: 12rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.project .projectImage:hover .projectImageContent{
+    opacity: 1;
+    
+}
+
+.project .projectCard{
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.project .projectCard h2{
+    font-size: 3rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-right: 1rem;
+}
+.project .projectCard h5{
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-right: 1rem;
+}
+.project .projectCard .pText{
+    font-size: .9rem;
+    color: #707070;
+    font-weight: 600;
+    margin-right: 1rem;
+}
+
+.project .projectCounter{
+    margin-top: 7rem;
+    padding-bottom: 3rem;
+}
+
+
+/* FEEDBACK */
+
+.feedback{
+    margin-top: 6rem;
+    background-image: url('../images/experienceBg.png');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.feedback .feedbackCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 4rem 1rem;
+    box-shadow: 0px 0px 1rem rgba(99, 99, 99, 0.237);
+    text-align: center;
+    position: relative;
+}
+
+.feedback .feedbackCard img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transform: translateY(-41px);
+}
+.feedback .feedbackCard p{
+    font-size: .9rem;
+}
+
+.feedback .owl-carousel .owl-item img {
+    display: block;
+    width: 80px !important;
+
+}
+
+.feedback .feedbackContent{
+    margin-top: 6rem;
+}
+
+.feedback .feedbackContent h1{
+    font-size: 4rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.feedback .feedbackContent p{
+    font-size: 1rem;
+    color: #707070;
+    font-weight: 400;
+}
