@@ -601,6 +601,10 @@ header .navbar ul li button {
     padding-block: 10rem;
     color: #fff;
 }
+.about-hero h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
 
 .about-hero .about-heroContent {
     display: flex;
@@ -626,4 +630,12 @@ header .navbar ul li button {
 .copyrights p{
     padding: .3rem .1rem;
     color: #a1a1a1;
+}
+
+
+/* blogs */
+
+
+.blogs{
+    margin-block: 6rem;
 }
