@@ -4,6 +4,7 @@
 :root {
     --primary-color: #FABC3D;
     --secondary-color: #001b5e;
+    --footer-bg: #091B27;
 
 }
 
@@ -315,6 +316,7 @@ header .navbar ul li button {
     border-color: transparent !important;
     font-size: .9rem;
 }
+
 .project .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link {
     color: var(--secondary-color);
@@ -323,17 +325,25 @@ header .navbar ul li button {
     font-size: .9rem;
     margin-left: 2rem;
 }
+
 .project .nav-tabs {
     border: none !important;
 }
 
-.project .projectImage{
+.project .projectImage {
     position: relative;
+    margin-top: 2rem;
+}
+
+
+.project .projectImage img {
+    width: 100%;
+    height: 500px;
 }
 
 
 
-.project .projectImage .projectImageContent{
+.project .projectImage .projectImageContent {
     background: #001b5e8b;
     position: absolute;
     top: 50%;
@@ -346,13 +356,14 @@ header .navbar ul li button {
     transition: all 0.4s ease-in-out;
 }
 
-.project .projectImage .projectImageContent h5{
+.project .projectImage .projectImageContent h5 {
     margin-top: 12rem;
     font-size: 1rem;
     font-weight: 500;
     color: var(--primary-color);
 }
-.project .projectImage .projectImageContent a{
+
+.project .projectImage .projectImageContent a {
     margin-top: 12rem;
     font-size: 2rem;
     font-weight: 600;
@@ -361,37 +372,39 @@ header .navbar ul li button {
     text-decoration: none;
 }
 
-.project .projectImage:hover .projectImageContent{
+.project .projectImage:hover .projectImageContent {
     opacity: 1;
-    
+
 }
 
-.project .projectCard{
+.project .projectCard {
     display: flex;
     margin-top: 1rem;
     align-items: center;
 }
 
-.project .projectCard h2{
+.project .projectCard h2 {
     font-size: 3rem;
     color: var(--primary-color);
     font-weight: 600;
     margin-right: 1rem;
 }
-.project .projectCard h5{
+
+.project .projectCard h5 {
     font-size: 1.5rem;
     color: var(--secondary-color);
     font-weight: 600;
     margin-right: 1rem;
 }
-.project .projectCard .pText{
+
+.project .projectCard .pText {
     font-size: .9rem;
     color: #707070;
     font-weight: 600;
     margin-right: 1rem;
 }
 
-.project .projectCounter{
+.project .projectCounter {
     margin-top: 7rem;
     padding-bottom: 3rem;
 }
@@ -399,7 +412,7 @@ header .navbar ul li button {
 
 /* FEEDBACK */
 
-.feedback{
+.feedback {
     margin-top: 6rem;
     background-image: url('../images/experienceBg.png');
     height: 100%;
@@ -407,7 +420,7 @@ header .navbar ul li button {
     background-size: cover;
 }
 
-.feedback .feedbackCard{
+.feedback .feedbackCard {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -418,13 +431,14 @@ header .navbar ul li button {
     position: relative;
 }
 
-.feedback .feedbackCard img{
+.feedback .feedbackCard img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
     transform: translateY(-41px);
 }
-.feedback .feedbackCard p{
+
+.feedback .feedbackCard p {
     font-size: .9rem;
 }
 
@@ -434,18 +448,182 @@ header .navbar ul li button {
 
 }
 
-.feedback .feedbackContent{
+.feedback .feedbackContent {
     margin-top: 6rem;
 }
 
-.feedback .feedbackContent h1{
+.feedback .feedbackContent h1 {
     font-size: 4rem;
     color: var(--secondary-color);
     font-weight: 600;
 }
 
-.feedback .feedbackContent p{
+.feedback .feedbackContent p {
     font-size: 1rem;
     color: #707070;
     font-weight: 400;
+}
+
+
+/* News */
+
+.news {
+    transform: translateY(-8rem);
+}
+
+.news h1 {
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: #001B5E;
+    margin: 4rem auto;
+}
+
+.news .commentAndDate {
+    display: flex;
+    align-items: center;
+    font-size: .8rem;
+    color: #838383;
+}
+
+.news .commentAndDate .newsComments {
+    margin-right: 4rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.news .commentAndDate .newsComments p {
+    margin-left: 4px;
+
+
+}
+
+.news .commentAndDate .newsDate {
+
+    display: flex;
+    align-items: center;
+}
+
+.news .commentAndDate .newsDate p {
+
+    margin-left: 4px;
+
+}
+
+.news .bx {
+    transform: translateY(-.6rem)
+}
+
+.news .card {
+    border: none;
+}
+
+.news .card h4 {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    margin-bottom: 2rem !important;
+
+}
+
+.news .card h4:hover {
+    color: var(--primary-color);
+
+}
+
+.news .card a {
+    color: var(--secondary-color);
+    font-size: .9rem;
+}
+
+
+
+/* footer */
+
+.footer {
+    background-color: var(--footer-bg);
+    height: 50vh;
+    color: rgb(96, 96, 96);
+    padding-block: 4rem;
+}
+
+.footer .footer_content h2 {
+    margin-block: 2rem;
+    color: #ececec;
+}
+
+.footer .footer_content p {
+    font-size: .9rem;
+}
+
+.footer .footer_services {
+    margin-block: 2.5rem;
+}
+
+.footer .footer_services h5 {
+    color: #fff;
+}
+
+.footer .footer_services .footer_services_links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .footer_services .footer_services_links a {
+    color: rgb(96, 96, 96);
+    font-size: .9rem;
+    margin-top: .7rem;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer .footer_services .footer_services_links a:hover {
+    color: var(--primary-color);
+    font-size: .9rem;
+    margin-top: .7rem;
+}
+
+.footer .footer_services .footer_services_links p {
+    color: rgb(96, 96, 96);
+    font-size: 0.9rem;
+}
+
+
+
+
+/* about-hero */
+
+.about-hero {
+    background-image: linear-gradient(to bottom, #001b5ebd, #001b5e96), url('../images/aboutHero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-block: 10rem;
+    color: #fff;
+}
+
+.about-hero .about-heroContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-hero .about-heroLinks {
+    font-size: 1rem;
+}
+
+.about-hero .about-heroLinks a {
+    color: var(--primary-color);
+}
+
+.copyrights{
+    background-color: #292929;
+    font-size: 1rem;
+    text-align: center;
+    
+}
+
+.copyrights p{
+    padding: .3rem .1rem;
+    color: #a1a1a1;
 }
