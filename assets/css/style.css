@@ -601,7 +601,8 @@ header .navbar ul li button {
     padding-block: 10rem;
     color: #fff;
 }
-.about-hero h2{
+
+.about-hero h2 {
     font-size: 3rem;
     font-weight: 700;
 }
@@ -620,14 +621,14 @@ header .navbar ul li button {
     color: var(--primary-color);
 }
 
-.copyrights{
+.copyrights {
     background-color: #292929;
     font-size: 1rem;
     text-align: center;
-    
+
 }
 
-.copyrights p{
+.copyrights p {
     padding: .3rem .1rem;
     color: #a1a1a1;
 }
@@ -636,6 +637,143 @@ header .navbar ul li button {
 /* blogs */
 
 
-.blogs{
+.blogs {
     margin-block: 6rem;
+}
+
+.blogs .blogCard {
+    margin: 2rem auto;
+    box-shadow: 1px 1px 1rem 1px rgba(159, 159, 159, 0.2);
+}
+
+.blogs .blogCard .blogCardImg {
+    position: relative;
+}
+
+.blogs .blogCard .blogCardImg img {
+    width: 100%;
+    height: 400px;
+}
+
+.blogs .blogCardImg .dateBadge {
+    position: absolute;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: .5rem 2rem;
+    bottom: -10%;
+    left: 3%;
+}
+
+.blogs .blogCardImg .dateBadge h5 {
+    font-size: 2rem;
+}
+
+.blogs .blogCardImg .dateBadge p {
+    font-size: 1rem;
+}
+
+.blogs .blogCard .blogCardContent {
+    margin-top: 4rem;
+    font-size: .9rem;
+    padding: 1rem;
+}
+
+.blogs .blogCard .blogCardContent a {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    text-decoration: none;
+
+}
+
+.blogs .blogCard .blogCardContent a:hover {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-decoration: none;
+
+}
+
+.blogs .blogCard .blogCardContent p {
+    font-size: .9rem;
+    color: #292929;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.blogs .searchCard {
+    margin-top: 2rem;
+    background-color: #fafafa;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.blogs .searchCard .input {
+    width: 100%;
+    padding: 1rem;
+}
+
+.blogs .searchCard .input input {
+    width: 100%;
+    padding: .9rem 2rem;
+    border: none;
+}
+
+.blogs .searchCard button {
+    width: 90%;
+    background-color: var(--primary-color);
+    color: #fff;
+
+}
+
+.blogs .categoryCard {
+    margin-top: 2rem;
+    background-color: #fafafa;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+}
+
+.blogs .categoryCard h5 {
+    color: var(--secondary-color);
+    margin: 1rem 1rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.blogs .categoryCard a {
+    color: #8d8d8d;
+    margin: 1rem 1rem;
+    font-size: .9rem;
+    text-decoration: none;
+}
+
+.blogs .single-blogSection {
+    margin-top: 2rem;
+}
+
+.blogs .single-blogSection h3 {
+    margin-block: 1rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.blogs .single-blogSection small {
+    font-size: .8rem;
+    color: #838383;
+}
+
+.blogs .single-blogSection p {
+    font-size: .9rem;
+    margin-top: 2rem;
+    color: #838383;
+
 }
