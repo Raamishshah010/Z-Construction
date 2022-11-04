@@ -777,3 +777,62 @@ header .navbar ul li button {
     color: #838383;
 
 }
+
+
+
+/* contact-us */
+
+
+.contact-us{
+    margin-top: 5rem;
+}
+
+.contact-us textarea {
+    width: 100%;
+    border: 1px solid #cfcfcf;
+    font-size: .7rem;
+    color: #83868C;
+    padding: 1rem;
+}
+
+
+.contact-us textarea:focus {
+    outline: none
+}
+
+.contact-us textarea::placeholder {
+    font-size: .7rem;
+
+}
+
+
+.contact-us input {
+    width: 100%;
+    border: 1px solid #cfcfcf;
+    color: #83868C;
+    padding: 1rem;
+    font-size: .7rem;
+    margin-top: 1rem;
+}
+
+.contact-us input::placeholder {
+    font-size: .7rem;
+}
+
+.contact-us input:focus {
+    outline: none
+}
+
+.contact-us button {
+    padding: .7rem 4rem;
+    color: #fff;
+    background-color: var(--primary-color);
+    
+}
+
+.contact-us button:hover {
+    padding: .7rem 4rem;
+    color: #fff;
+    background-color: var(--secondary-color);
+
+}
