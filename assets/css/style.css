@@ -836,3 +836,20 @@ header .navbar ul li button {
     background-color: var(--secondary-color);
 
 }
+
+.contact-us .contact-card{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.contact-us .contact-card h6{
+    font-size: 1rem;
+    color: #001B5E;
+    font-weight: 400;
+}
+
+.contact-us .contact-card p{
+    font-size: .7rem;
+    color: #001B5E;
+    font-weight: 400;
+}
