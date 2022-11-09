@@ -89,63 +89,216 @@
 
     <section class="contact-us">
         <div class="container">
-            
 
-            <div class="row mt-5 mb-5">
-                <div class="col-sm-12 col-md-12 col-lg-8">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="GreyStructure-tab" data-toggle="tab" href="#GreyStructure" role="tab"
+                        aria-controls="GreyStructure" aria-selected="true">Grey Structure</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="FinishStructure-tab" data-toggle="tab" href="#FinishStructure" role="tab"
+                        aria-controls="FinishStructure" aria-selected="false">Finish Structure</a>
+                </li>
 
-                    <textarea name="" id="" cols="30" rows="10"  placeholder="Enter Message"></textarea>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="GreyStructure" role="tabpanel"
+                    aria-labelledby="GreyStructure-tab">
 
-                    <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-6">
-                            <input type="text" placeholder="Enter Name">
+
+                    <div class="container my-5">
+                        <h5>Grey Structure</h5>
+                        <div class="greyStructure">
+
+                            <div class="form-group my-5">
+                                <label for="exampleFormControlSelect1">Example select</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>5 Marla</option>
+                                    <option>7 Marla</option>
+                                    <option>10 Marla</option>
+                                    <option>1 Kanal</option>
+
+                                </select>
+                            </div>
+
+                            <p class="labelText">Please Select Quality</p>
+                            <div class="dropdown my-5">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-sm-12 col-md-12 col-lg-6 my-2">
+                                    <div class="form-group">
+                                        <label for="cement">Cement</label>
+                                        <select class="form-control" id="cement">
+                                            <option>Kohat Cement</option>
+                                            
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-12 col-lg-6 my-2">
+                                    <div class="form-group">
+                                        <label for="sand">Sand</label>
+                                        <select class="form-control" id="sand">
+                                            <option>Chanab Sand</option>
+                                            
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-12 col-lg-6 my-2">
+                                    <div class="form-group">
+                                        <label for="aggregate">Aggregate</label>
+                                        <select class="form-control" id="aggregate">
+                                            <option>Gravel</option>
+                                            
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-12 col-lg-6 my-2">
+                                    <div class="form-group">
+                                        <label for="bricks">Bricks</label>
+                                        <select class="form-control" id="bricks">
+                                            <option>Burnt Clay Bricks</option>
+                                            
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-12 col-lg-6 my-2">
+                                    <div class="form-group">
+                                        <label for="steel">Steel</label>
+                                        <select class="form-control" id="steel">
+                                            <option>Mughal Steel</option>
+                                            
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-12 col-lg-6 my-2">
+                                    <div class="form-group">
+                                        <label for="bindingwire">Binding Wire</label>
+                                        <select class="form-control" id="bindingwire">
+                                            <option>Mughal Steel</option>
+                                            
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-12 col-lg-6 my-2">
+                                    <div class="form-group">
+                                        <label for="chawkat">Chawakat</label>
+                                        <select class="form-control" id="chawkat">
+                                            <option>Mughal Steel</option>
+                                            
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-12 col-lg-6 my-2">
+                                    <div class="form-group">
+                                        <label for="gate">Gate</label>
+                                        <select class="form-control" id="gate">
+                                            <option>Mughal Steel</option>
+                                            
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-12 col-lg-6 my-2">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Electrucity Work</label>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-12 col-lg-6 my-2">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Senitry</label>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-12 col-lg-6 my-2">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Sewerage</label>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-12 col-lg-6 my-2">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Gas Line</label>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-12 col-lg-6 my-2">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Hardcore Filling</label>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            <button class="btn btn-custom">Submit</button>
+
+
                         </div>
-                        <div class="col-sm-12 col-md-12 col-lg-6">
-                            <input type="text"  placeholder="Enter Email">
-                        </div>
                     </div>
-
-
-                    <input type="text"  placeholder="Enter Subject">
-
-                    <button class="btn btn-send mt-5">Send Message</button>
 
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-4">
-
-                <div class="contact-card">
-                    <div class="contact-cardImg">
-
-                    </div>
-                    <div class="contact-cardContent">
-                        <h6>Buttonwood, California.</h6>
-                        <p>Rosemead, CA 91770</p>
-                    </div>
+                <div class="tab-pane fade" id="FinishStructure" role="tabpanel" aria-labelledby="FinishStructure-tab">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dolore minima consequatur sit
+                        expedita exercitationem, deleniti tenetur amet maiores fugit ducimus facere, impedit repellendus
+                        tempora incidunt distinctio qui assumenda nesciunt atque quaerat necessitatibus accusantium?
+                        Labore maiores tempore eos facere, eius nesciunt! Tempore sed placeat voluptatem.</p>
                 </div>
 
-                <div class="contact-card">
-                    <div class="contact-cardImg">
-
-                    </div>
-                    <div class="contact-cardContent">
-                        <h6>00 (440) 9865 562</h6>
-                        <p>Mon to Fri 9am to 6pm</p>
-                    </div>
-                </div>
-
-                <div class="contact-card">
-                    <div class="contact-cardImg">
-
-                    </div>
-                    <div class="contact-cardContent">
-                        <h6>support@colorlib.com</h6>
-                        <p>Send us your query anytime!</p>
-                    </div>
-                </div>
-
-                </div>
             </div>
-
         </div>
     </section>
 
