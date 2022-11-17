@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Z Construction</title>
-
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <!-- owl carousel css link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 
@@ -110,8 +110,26 @@
                         <h5>Grey Structure</h5>
                         <div class="greyStructure">
 
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <input class="form-control" type="text" placeholder="Name">
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <input class="form-control" type="text" placeholder="Address">
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <input class="form-control" type="text" placeholder="CNIC">
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <input class="form-control" type="text" placeholder="Contact No">
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-12">
+                                    <input class="form-control" type="text" placeholder="Contact No">
+                                </div>
+                            </div>
+
                             <div class="form-group my-5">
-                                <label for="exampleFormControlSelect1">Example select</label>
+                                <label for="exampleFormControlSelect1">Select Plot Size</label>
                                 <select class="form-control" id="exampleFormControlSelect1">
                                     <option>5 Marla</option>
                                     <option>7 Marla</option>
@@ -122,26 +140,28 @@
                             </div>
 
                             <p class="labelText">Please Select Quality</p>
-                            <div class="dropdown my-5">
+                            <div class="dropdown mb-5">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Dropdown button
+                                    Select Quality
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <a class="dropdown-item" onclick="showForm()">Quality A</a>
+                                    <a class="dropdown-item" href="#">Quality B</a>
+                                    <a class="dropdown-item" href="#">Quality C</a>
+
                                 </div>
                             </div>
 
-                            <div class="row">
+                            <div class="row hide" id="calForm">
 
                                 <div class="col-sm-12 col-md-12 col-lg-6 my-2">
                                     <div class="form-group">
                                         <label for="cement">Cement</label>
                                         <select class="form-control" id="cement">
+                                            <option></option>
                                             <option>Kohat Cement</option>
-                                            
+
                                         </select>
                                     </div>
                                 </div>
@@ -150,8 +170,9 @@
                                     <div class="form-group">
                                         <label for="sand">Sand</label>
                                         <select class="form-control" id="sand">
+                                            <option></option>
                                             <option>Chanab Sand</option>
-                                            
+
                                         </select>
                                     </div>
                                 </div>
@@ -160,8 +181,9 @@
                                     <div class="form-group">
                                         <label for="aggregate">Aggregate</label>
                                         <select class="form-control" id="aggregate">
+                                            <option></option>
                                             <option>Gravel</option>
-                                            
+
                                         </select>
                                     </div>
                                 </div>
@@ -170,8 +192,9 @@
                                     <div class="form-group">
                                         <label for="bricks">Bricks</label>
                                         <select class="form-control" id="bricks">
+                                            <option></option>
                                             <option>Burnt Clay Bricks</option>
-                                            
+
                                         </select>
                                     </div>
                                 </div>
@@ -180,8 +203,9 @@
                                     <div class="form-group">
                                         <label for="steel">Steel</label>
                                         <select class="form-control" id="steel">
+                                            <option></option>
                                             <option>Mughal Steel</option>
-                                            
+
                                         </select>
                                     </div>
                                 </div>
@@ -190,8 +214,9 @@
                                     <div class="form-group">
                                         <label for="bindingwire">Binding Wire</label>
                                         <select class="form-control" id="bindingwire">
+                                            <option></option>
                                             <option>Mughal Steel</option>
-                                            
+
                                         </select>
                                     </div>
                                 </div>
@@ -200,8 +225,9 @@
                                     <div class="form-group">
                                         <label for="chawkat">Chawakat</label>
                                         <select class="form-control" id="chawkat">
+                                            <option></option>
                                             <option>Mughal Steel</option>
-                                            
+
                                         </select>
                                     </div>
                                 </div>
@@ -210,64 +236,57 @@
                                     <div class="form-group">
                                         <label for="gate">Gate</label>
                                         <select class="form-control" id="gate">
+                                            <option></option>
                                             <option>Mughal Steel</option>
-                                            
+
                                         </select>
                                     </div>
                                 </div>
 
                                 <div class="col-sm-12 col-md-12 col-lg-6 my-2">
                                     <div class="form-group">
-                                        <label for="exampleFormControlSelect1">Electrucity Work</label>
-                                        <select class="form-control" id="exampleFormControlSelect1">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
+                                        <label for="electricity">Electrucity Work</label>
+                                        <select class="form-control" id="electricity">
+                                            <option></option>
+                                            <option>BICC</option>
+
                                         </select>
                                     </div>
                                 </div>
 
                                 <div class="col-sm-12 col-md-12 col-lg-6 my-2">
                                     <div class="form-group">
-                                        <label for="exampleFormControlSelect1">Senitry</label>
+                                        <label for="exampleFormControlSelect1">Sanitary</label>
                                         <select class="form-control" id="exampleFormControlSelect1">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
+                                            <option></option>
+                                            <option>Porta</option>
+
                                         </select>
                                     </div>
                                 </div>
 
                                 <div class="col-sm-12 col-md-12 col-lg-6 my-2">
                                     <div class="form-group">
-                                        <label for="exampleFormControlSelect1">Sewerage</label>
-                                        <select class="form-control" id="exampleFormControlSelect1">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
+                                        <label for="sewage">Sewage</label>
+                                        <select class="form-control" id="sewage">
+                                            <option></option>
+                                            <option>Adamjee Pipes</option>
+
                                         </select>
                                     </div>
                                 </div>
 
                                 <div class="col-sm-12 col-md-12 col-lg-6 my-2">
                                     <div class="form-group">
-                                        <label for="exampleFormControlSelect1">Gas Line</label>
-                                        <select class="form-control" id="exampleFormControlSelect1">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
+                                        <label for="gasLine">Gas Line</label>
+                                        <select class="form-control" id="gasLine">
+                                            <option> </option>
+                                            <option>MDPE Pipes</option>
+
                                         </select>
                                     </div>
                                 </div>
-
+                                <!-- 
                                 <div class="col-sm-12 col-md-12 col-lg-6 my-2">
                                     <div class="form-group">
                                         <label for="exampleFormControlSelect1">Hardcore Filling</label>
@@ -279,15 +298,96 @@
                                             <option>5</option>
                                         </select>
                                     </div>
+                                </div> -->
+
+
+                                <div class="col-sm-12 col-md-12 col-lg-12 my-2">
+                                    <button class="btn btn-custom">Submit</button>
+
                                 </div>
 
 
 
                             </div>
-                            <button class="btn btn-custom">Submit</button>
 
 
                         </div>
+
+                        <div class="estimationInvoice" id="photo">
+                            <div class="logo">
+
+                                <div class="invoiceLogo">
+                                    <a class="navbar-brand" style="color: var(--secondary-color)" href="#"><span
+                                            class="heading">Z</span>- Construction</a>
+
+                                </div>
+
+                                <div class="invoiceInfo">
+
+                                    <h5>Your Company</h5>
+                                    <p>1479 Willow Greene Drive</p>
+                                    <p>Montgomery, Alabama</p>
+                                    <p>36104</p>
+
+                                    <p><span class="invoiceIcon"><i class='bx bxs-envelope'></i></span>
+                                        MyEmail@zeaco.com</p>
+                                    <p><span class="invoiceIcon"><i class='bx bxs-phone-call'></i></span> +92 1234567890
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+
+                                <table class="table">
+                                    <thead class="thead-custom">
+                                        <tr>
+                                            <th scope="col">Products</th>
+                                            <th scope="col">Quantity</th>
+                                            <th scope="col">Price</th>
+                                            <th scope="col">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="total-estimation">
+                                <div class="total-estimationCost">
+                                    <h5>Sub Total</h5>
+                                    <h6>120000.00Rs</h6>
+                                </div>
+                                <div class="total-estimationCost">
+                                    <h5>Profit</h5>
+                                    <h6>120000.00Rs</h6>
+                                </div>
+                                <div class="total-estimationCost">
+                                    <h5>Total</h5>
+                                    <h6>120000.00Rs</h6>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <p class="text-center mt-3"><button class="btn btn-custom" onclick="takeshot()">Generate
+                                Pdf</button></p>
+
+                        <div id="output"></div>
+
                     </div>
 
                 </div>
@@ -342,7 +442,7 @@
                     <div class="footer_services">
                         <h5>Contact Info </h5>
                         <div class="footer_services_links">
-                            <p>4361 Morningview Lane Artland , Street Latimer, IA 50452 / 23654</p>
+                            <p>Bahadur Colony St no. 2 near DC office Pindi road,  Kohat.</p>
 
                             <p>Address : Hath of it fly signs bear be one blessed after</p>
 
@@ -367,14 +467,36 @@
     <!-- FOOTER END -->
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js">
+    </script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
     <!-- owl carousel js file -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
     <script src="./assets/js/index.js"></script>
+
+    <script type="text/javascript">
+
+        // Define the function 
+        // to screenshot the div
+        function takeshot() {
+            let div =
+                document.getElementById('photo');
+
+            // Use the html2canvas
+            // function to take a screenshot
+            // and append it
+            // to the output div
+            html2canvas(div).then(
+                function (canvas) {
+                    document
+                        .getElementById('output')
+                        .appendChild(canvas);
+                })
+        }
+    </script>
 </body>
 
 </html>

@@ -631,6 +631,7 @@ header .navbar ul li button {
 .copyrights p {
     padding: .3rem .1rem;
     color: #a1a1a1;
+    margin-top: -2rem;
 }
 
 
@@ -783,7 +784,7 @@ header .navbar ul li button {
 /* contact-us */
 
 
-.contact-us{
+.contact-us {
     margin-top: 5rem;
 }
 
@@ -827,7 +828,7 @@ header .navbar ul li button {
     padding: .7rem 4rem;
     color: #fff;
     background-color: var(--primary-color);
-    
+
 }
 
 .contact-us button:hover {
@@ -837,19 +838,149 @@ header .navbar ul li button {
 
 }
 
-.contact-us .contact-card{
+.contact-us .contact-card {
     display: flex;
     margin-top: 1rem;
 }
 
-.contact-us .contact-card h6{
+.contact-us .contact-card h6 {
     font-size: 1rem;
     color: #001B5E;
     font-weight: 400;
 }
 
-.contact-us .contact-card p{
+.contact-us .contact-card p {
     font-size: .7rem;
     color: #001B5E;
     font-weight: 400;
+}
+
+/* greyStructure */
+.greyStructure {
+    margin-top: 5rem;
+}
+
+.greyStructure label {
+    font-size: .8rem;
+    font-weight: 500;
+    color: #707070;
+}
+
+.greyStructure select {
+    font-size: .8rem;
+    font-weight: 400;
+    color: #939393;
+}
+
+.greyStructure p {
+    font-size: .8rem;
+    font-weight: 400;
+    color: #939393;
+}
+
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+
+.greyStructure .project .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link {
+    color: var(--primary-color);
+    background-color: #fff;
+    border-color: transparent !important;
+    font-size: .9rem;
+    margin-left: 2rem;
+    background-color: var(--secondary-color);
+}
+
+.greyStructure .project .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border-color: transparent !important;
+    font-size: .9rem;
+}
+
+
+.estimationInvoice {
+    background-color: #fafafa;
+    padding: 2rem;
+    padding-bottom: 12rem;
+    height: 100%;
+}
+
+.estimationInvoice .logo {
+    font-size: .8rem;
+    color: #83868C;
+    display: flex;
+    justify-content: space-between;
+}
+
+.estimationInvoice .logo .invoiceInfo h5 {
+    margin-bottom: 2rem;
+}
+
+.estimationInvoice .logo .invoiceInfo {
+    text-align: right;
+    line-height: .6rem;
+    font-weight: 600;
+}
+
+.estimationInvoice thead {
+    background-color: var(--primary-color);
+    font-size: .9rem;
+    color: var(--secondary-color);
+}
+
+.estimationInvoice table {
+    margin-block: 4rem;
+}
+
+.estimationInvoice .table td, .table th {
+    padding: 0.75rem;
+    vertical-align: top;
+    border: none !important;
+    
+}
+
+.estimationInvoice tbody {
+    color: var(--secondary-color);
+    font-size: .9rem;
+}
+
+.estimationInvoice .total-estimation {
+    float: right;
+
+}
+
+.estimationInvoice .total-estimation .total-estimationCost {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.estimationInvoice .total-estimation .total-estimationCost:nth-child(3) {
+    border-top: 1px solid var(--primary-color);
+    padding-top: 1rem;
+}
+
+
+
+.estimationInvoice .total-estimation .total-estimationCost h5 {
+    margin-right: 4rem;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.estimationInvoice .total-estimation .total-estimationCost h6 {
+    margin-right: 4rem;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #83868C
 }

@@ -24,3 +24,8 @@ $('.owl-carousel').owlCarousel({
 function goCalculator(){
     window.location.href = '../../quote.html'
 }
+
+
+function showForm(){
+    $('#calForm').removeClass('hide')
+}
